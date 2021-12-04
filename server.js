@@ -18,7 +18,8 @@ APP.use(bodyParser.urlencoded({extended: true}));
 const httpServer  = createServer(APP);
 const io = new Server(httpServer, {
     cors:{
-      origin:"https://admiring-heyrovsky-f50208.netlify.app/1=*",
+      origin:"https://admiring-heyrovsky-f50208.netlify.app/",
+      methods:["GET", "POST"],
     }
 });
 
