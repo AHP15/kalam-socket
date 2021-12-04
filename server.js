@@ -16,6 +16,7 @@ APP.get("/", (req, res) =>{
     res.status(200).send({message: "hello from socket app"});
 })
 
-APP.listen(8080, () =>{
+const port = process.env.PORT || 8080
+APP.listen(port, () =>{
     console.log("listening on port 8080");
 });
