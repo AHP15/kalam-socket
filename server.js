@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
-import { createServer } from "https";
+import { createServer } from "http";
 import { Server } from "socket.io";
 import jwt  from "jsonwebtoken";
 
