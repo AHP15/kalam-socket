@@ -8,7 +8,7 @@ import jwt  from "jsonwebtoken";
 const APP = express();
 
 APP.use(cors({
-    origin: "http://localhost:8080",
+    origin: "https://admiring-heyrovsky-f50208.netlify.app",
 }));
 
 APP.use(bodyParser.json());
